@@ -1,0 +1,46 @@
+@import "../../../theme/theme.scss";
+
+.accordion {
+  &__collapse {
+    display: grid;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+    grid-template-rows: 0fr;
+    padding: 0 10px;
+
+    &_active {
+      padding: 15px 10px;
+      grid-template-rows: 1fr;
+      border-bottom: 1px solid $gray;
+    }
+  }
+
+  &__body {
+    min-height: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+    padding: 15px 10px;
+    border-bottom: 1px solid $gray;
+  }
+
+  &__header-button {
+    display: flex;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+
+    &_active {
+      &svg {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../../theme/theme.scss';
+
+
+.checkbox-wrapper {
+  display: flex;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid;
+  border-color: $gray;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__input {
+    display: none;
+
+    &:checked+.checkbox__content {
+      display: flex;
+    }
+  }
+
+  &__content {
+    display: none;
+  }
+
+  &_active {
+    border-color: $green;
+  }
+
+  &_disabled {}
+}

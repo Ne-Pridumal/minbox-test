@@ -1,0 +1,22 @@
+@import "../../../theme/theme.scss";
+
+.radio-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+
+  &__button {
+    display: flex;
+  }
+
+  &__content {
+    display: flex;
+
+    &_checked {
+      p {
+        text-decoration: line-through;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../../theme/theme.scss';
+
+.radio-button-wrapper {
+  display: flex;
+}
+
+.radio-button {
+  display: flex;
+  padding: 5px;
+  border-radius: 3px;
+
+  &_active {
+    box-shadow: 0px 0px 0px 1px $orange;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__content {}
+}

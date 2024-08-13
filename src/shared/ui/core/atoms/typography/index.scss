@@ -1,0 +1,30 @@
+.typography {
+  font-family: "Zen Maru Gothic", serif;
+  font-style: normal;
+  word-break: break-all;
+  line-height: 100%;
+
+  &_title-h1 {
+    font-size: 120px;
+  }
+
+  &_subtitle {
+    font-size: 24px;
+  }
+
+  &_tiny {
+    font-size: 15px;
+  }
+
+  &_light {
+    font-weight: 400;
+  }
+
+  &_medium {
+    font-weight: 500;
+  }
+
+  &_bold {
+    font-weight: 600;
+  }
+}
